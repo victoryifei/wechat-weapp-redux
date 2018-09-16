@@ -25,8 +25,6 @@ function bindActionCreators(actionCreators, dispatch) {
   return boundActionCreators;
 }
 
-function wrapActionCreators(actionCreators) {
+export default function wrapActionCreators(actionCreators) {
   return dispatch => bindActionCreators(actionCreators, dispatch)
 }
-
-module.exports = wrapActionCreators

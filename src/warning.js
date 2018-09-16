@@ -4,7 +4,7 @@
  * @param {String} message The warning message.
  * @returns {void}
  */
-function warning(message) {
+export default function warning(message) {
   /* eslint-disable no-console */
   if (typeof console !== 'undefined' && typeof console.error === 'function') {
     console.error(message)
@@ -19,5 +19,3 @@ function warning(message) {
   } catch (e) {}
   /* eslint-enable no-empty */
 }
-
-module.exports = warning

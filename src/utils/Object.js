@@ -1,4 +1,4 @@
-const assign = function (target) {
+export const assign = function (target) {
     'use strict';
     // We must check against these specific cases.
     if (target === undefined || target === null) {
@@ -18,7 +18,3 @@ const assign = function (target) {
     }
     return output;
 };
-
-module.exports = {
-    assign: assign
-}
